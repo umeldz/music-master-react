@@ -9,6 +9,10 @@ const API_ADDRESS = 'https://spotify-api-wrapper.appspot.com';
 class App extends Component {
   state ={artist:null, tracks:[]};
 
+  componentDidMount(){
+    this.searchArtist('Bruno Mars');
+  }
+
   searchArtist = (artistQuery) => {
     var artist_query =artistQuery;
 
